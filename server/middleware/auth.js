@@ -14,4 +14,4 @@ module.exports = (req,res,next) => {
     } else {
         next(Error('No token provided'));
     }
-}
+};

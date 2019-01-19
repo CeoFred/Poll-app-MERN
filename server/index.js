@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.use('/api/auth',routes.auth);
-
+app.use('/api/poll',routes.poll);
 
 app.get('/',(req,res) => {
     res.json({

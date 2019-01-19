@@ -1,5 +1,8 @@
 const db = require("../models/index");
 const jwt = require('jsonwebtoken');
+module.exports = {
+    ...require('./poll')
+};
 
 module.exports.register =  async (req, res, next) => {
   try {
